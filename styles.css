@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
     background-color: #000; /* Black background */
@@ -17,14 +18,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-	width: 400px;
+    width: 100%;
 }
 
 /* Tulip Flower */
 .tulip {
     position: relative;
     z-index: 2;
-    margin-bottom: 20px; /* Space between flower and message */
+    margin-bottom: 10px; /* Space between flower and text */
 }
 
 .flower {
@@ -81,7 +82,18 @@ body {
     top: 130px;
     left: 15px;
     transform: rotate(-45deg);
-    box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32; /* Glow effect */
+    box-shadow: 0 0 0px #32cd32, 0 0 20px #32cd32; /* Glow effect */
+}
+
+/* Text Under Tulip */
+.text {
+    position: absolute;
+    bottom: 100px;
+    font-size: 24px;
+    color: #fff; /* White text for contrast */
+    text-shadow: 0 0 0px #fff, 0 0 20px #fff; /* Glow effect */
+    margin-bottom: 20px; /* Space between text and message */
+    z-index: 2;
 }
 
 /* Glowing Particles */
@@ -103,7 +115,7 @@ body {
     border-radius: 50%;
     opacity: 0;
     animation: fall 5s linear infinite;
-    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4; 
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4; /* Glow effect */
 }
 
 .particles span.love {
@@ -112,7 +124,7 @@ body {
     background-color: transparent;
     font-size: 16px;
     color: #ff69b4;
-    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4; /* Glow effect */
     animation: fall 7s linear infinite;
 }
 
