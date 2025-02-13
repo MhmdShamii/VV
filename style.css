@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+	width: 400px;
+}
+
+/* Tulip Flower */
+.tulip {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px; /* Space between flower and message */
+}
+
+.flower {
+    position: relative;
+    width: 80px;
+    height: 100px;
+}
+
+.petal {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: #ff1493; /* Pink color for tulip petals */
+    border-radius: 50%;
+    box-shadow: 0 0 0px #ff1493, 0 0 20px #ff1493; /* Glow effect */
+}
+
+.petal.left {
+    transform: rotate(-30deg);
+    top: 10px;
+    left: 0;
+}
+
+.petal.right {
+    transform: rotate(30deg);
+    top: 10px;
+    right: 0;
+}
+
+.petal.center {
+    width: 50px;
+    height: 90px;
+    top: 0;
+    left: 15px;
+    z-index: 1;
+}
+
+.stem {
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    background-color: #32cd32; /* Green color for stem */
+    top: 90px;
+    left: 35px;
+    box-shadow: 0 0 0px #32cd32, 0 0 20px #32cd32; /* Glow effect */
+}
+
+.leaf {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #32cd32; /* Green color for leaf */
+    border-radius: 50%;
+    top: 130px;
+    left: 15px;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 10px #32cd32, 0 0 20px #32cd32; /* Glow effect */
+}
+
+/* Glowing Particles */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particles span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4; 
+}
+
+.particles span.love {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ff69b4;
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+    animation: fall 7s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Message */
+.message {
+    font-size: 24px;
+    color: #fff; /* White text for contrast */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff; /* Glow effect */
+    z-index: 2;
+}
