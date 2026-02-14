@@ -13,7 +13,7 @@ for (let i = 0; i < 50; i++) {
 for (let i = 0; i < 10; i++) {
     const loveParticle = document.createElement('span');
     loveParticle.classList.add('love');
-    loveParticle.textContent = 'I love you';
+    loveParticle.textContent = 'Love My YOYY';
     loveParticle.style.left = `${Math.random() * 100}%`;
     loveParticle.style.animationDelay = `${Math.random() * 10}s`;
     particlesContainer.appendChild(loveParticle);
