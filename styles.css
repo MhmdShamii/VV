@@ -87,12 +87,15 @@ body {
 
 /* Text Under Tulip */
 .text {
-    position: absolute;
-    bottom: 100px;
+    position: relative;
+    margin-top: 280px; /* Push text down so it appears under the flower */
     font-size: 24px;
     color: #fff; /* White text for contrast */
-    text-shadow: 0 0 0px #fff, 0 0 20px #fff; /* Glow effect */
-    margin-bottom: 20px; /* Space between text and message */
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 0 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff; /* Glow effect */
     z-index: 2;
 }
 
