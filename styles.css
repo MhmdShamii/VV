@@ -99,6 +99,17 @@ body {
     z-index: 2;
 }
 
+.text {
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards 1s;
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
 /* Glowing Particles */
 .particles {
     position: absolute;
@@ -141,6 +152,8 @@ body {
         opacity: 0;
     }
 }
+
+
 
 /* Message */
 .message {
