@@ -88,7 +88,7 @@ body {
 /* Text Under Tulip */
 .text {
     position: relative;
-    margin-top: 350px; /* Helps push text down below the flower */
+    margin-top: 250px; /* Helps push text down below the flower */
     font-size: 18px;   /* Smaller font size */
     color: #fff;
     text-align: center;
